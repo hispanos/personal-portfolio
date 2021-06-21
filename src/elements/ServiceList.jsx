@@ -1,36 +1,37 @@
 import React ,{ Component }from "react";
-import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
+import { FiLayers } from "react-icons/fi";
+import { FaMobileAlt, FaChartBar, FaBookReader, FaChalkboardTeacher, FaFileAlt } from "react-icons/fa";
 
 const ServiceList = [
     {
-        icon: <FiCast />,
-        title: 'Business Stratagy',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        icon: <FaMobileAlt />,
+        title: 'Desarrollo de PWA',
+        description: 'Tienes una idea genial que quieres que se ejecute en móviles? Juntos podemos hacerla realidad.'
     },
     {
         icon: <FiLayers />,
-        title: 'Website Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        title: 'Desarrollo de Sitio Web',
+        description: 'Buscas un sitio web responsivo, moderno y elegante? Este servicio es para tí.'
     },
     {
-        icon: <FiUsers />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        icon: <FaChartBar />,
+        title: 'Software POS o ERP',
+        description: 'Necesitas un sistema para administrar tu negocio? Puedo hacerte un desarrollo a la medida.'
     },
     { 
-        icon: <FiMonitor />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        icon: <FaBookReader />,
+        title: 'Consultoría de Software',
+        description: 'Pensando en qué software instalar en tu equipo? Juntos encontramos el software ideal para tu necesidad.'
     },
     {
-        icon: <FiUsers />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        icon: <FaChalkboardTeacher />,
+        title: 'Asistencia Remota',
+        description: 'Eres estudiante o programador y necesitas una mano con tus proyectos? Puedo ser la mano extra que necesitas.'
     },
     { 
-        icon: <FiMonitor />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        icon: <FaFileAlt />,
+        title: 'Creación de Contenido',
+        description: 'Atascado porque no sabes qué poner en tu sitio web? Puedo redactar el contenido que necesitas.'
     }
 ]
 
@@ -45,7 +46,7 @@ class Services extends Component{
                 <div className="row service-main-wrapper">
                     {ServiceContent.map( (val , i) => (
                         <div className={`${column}`} key={i}>
-                            <a href="/service-details">
+                            <a href="/">
                                 <div className="service service__style--2 text-left bg-gray">
                                     <div className="icon">
                                         {val.icon}

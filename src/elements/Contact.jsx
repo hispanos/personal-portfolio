@@ -18,21 +18,28 @@ class Contact extends Component{
                     <div className="row row--35 align-items-start">
                         <div className="col-lg-6 order-2 order-lg-1">
                             <div className="section-title text-left mb--50">
-                                <span className="subtitle">Let's Say Hi</span>
-                                <h2 className="title">Hire Me.</h2>
+                                <span className="subtitle">Deja un saludito</span>
+                                <h2 className="title">Contáctame.</h2>
                                 <div className="im_address_inner">
                                     <div className="im_address">
-                                        <span>Call us directly:</span>
-                                        <a className="link im-hover" href="tel:+111 (0)55 5869 8976<">+111 (0)55 5869 8976</a>
+                                        <span>Llámame:</span>
+                                        <a className="link im-hover" href="tel:+573192432568<">+57 3192432568</a>
                                     </div>
                                     <div className="im_address mt--5">
-                                        <span>Contact Email:</span>
-                                        <a className="link im-hover" href="mailto:example@gmail.com">example@gmail.com</a>
+                                        <span>WhatsApp:</span>
+                                        <a className="link im-hover" href="https://wa.me/+573192432568">Di Hola por WhatsApp</a>
+                                    </div>
+                                    <div className="im_address mt--5">
+                                        <span>Escríbeme:</span>
+                                        <a className="link im-hover" href="mailto:contacto@mailermartinez.com">contacto@mailermartinez.com</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="form-wrapper">
-                                <form>
+                                <form
+                                    method= "POST"
+                                    action= "https://formspree.io/f/xoqywbrj"
+                                >
                                     <label htmlFor="item01">
                                         <input
                                             type="text"
@@ -40,7 +47,8 @@ class Contact extends Component{
                                             id="item01"
                                             value={this.state.rnName}
                                             onChange={(e)=>{this.setState({rnName: e.target.value});}}
-                                            placeholder="Your Name *"
+                                            placeholder="Tu Nombre *"
+                                            required
                                         />
                                     </label>
 
@@ -51,7 +59,8 @@ class Contact extends Component{
                                             id="item02"
                                             value={this.state.rnEmail}
                                             onChange={(e)=>{this.setState({rnEmail: e.target.value});}}
-                                            placeholder="Your email *"
+                                            placeholder="Tu Correo *"
+                                            required
                                         />
                                     </label>
 
@@ -62,7 +71,8 @@ class Contact extends Component{
                                             id="item03"
                                             value={this.state.rnSubject}
                                             onChange={(e)=>{this.setState({rnSubject: e.target.value});}}
-                                            placeholder="Write a Subject"
+                                            placeholder="Escribe el asunto"
+                                            required
                                         />
                                     </label>
                                     <label htmlFor="item04">
@@ -72,10 +82,11 @@ class Contact extends Component{
                                             name="message"
                                             value={this.state.rnMessage}
                                             onChange={(e)=>{this.setState({rnMessage: e.target.value});}}
-                                            placeholder="Your Message"
+                                            placeholder="En qué te puedo ayudar?"
+                                            required
                                         />
                                     </label>
-                                    <button className="btn-default" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">Submit Now</button>
+                                    <button className="btn-default" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">Enviar</button>
                                 </form>
                             </div>
                         </div>
