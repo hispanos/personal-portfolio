@@ -22,7 +22,7 @@ const SlideList = [
 ]
 const App = () => {
     let title = 'Sobre Mí',
-        description = 'Soy un desarrollador web apasionado por la tecnología, me encanta entregar los trabajos a tiempo y procurro hacer realiad tus sueños.';
+        description = 'Soy un desarrollador web apasionado por la tecnología, me encanta entregar los trabajos a tiempo y procuro hacer realiad tus sueños.';
     const PostList = BlogContent.slice(0 , 3);
     return (
         <div className="active-dark bg_color--9">

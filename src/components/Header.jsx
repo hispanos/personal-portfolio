@@ -68,7 +68,6 @@ class Header extends Component{
                                 <li><a href="#about">Sobre Mí</a></li>
                                 <li><a href="#service">Servicios</a></li>
                                 <li><a href="#portfolio">Portafolio</a></li>
-                                <li><a href="#blog">Blog</a></li>
                                 <li><a href="#contact">Contáctame</a></li>
                             </Scrollspy>
                         </nav>

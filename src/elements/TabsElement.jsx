@@ -87,16 +87,16 @@ class TabsElement extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">Técnico en Sistemas<span> - UNAD</span></a> 2016
+                                                   <a href="/">Técnico en Sistemas<span> - UNAD</span></a> 2016
                                                </li>
                                                <li>
-                                                   <a href="/service">Desarrollo Frontend<span> - Academia Geek</span></a> 2021
+                                                   <a href="/">Desarrollo Frontend<span> - Academia Geek</span></a> 2021
                                                </li>
                                                <li>
-                                                   <a href="/service">PWA Developer<span> - Udemy</span></a> 2021
+                                                   <a href="/">PWA Developer<span> - Udemy</span></a> 2021
                                                </li>
                                                <li>
-                                                   <a href="/service">Servicio al Cliente<span> - SENA</span></a> 2014
+                                                   <a href="/">Servicio al Cliente<span> - SENA</span></a> 2014
                                                </li>
                                            </ul>
                                        </div>
