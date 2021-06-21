@@ -8,8 +8,6 @@ import Tab from "./elements/TabsElement";
 import Contact from "./elements/Contact";
 import PortfolioList from "./elements/PortfolioList";
 import ServiceList from "./elements/ServiceList";
-import BlogContent from "./elements/BlogContent";
-import { Link } from 'react-router-dom';
 
 const SlideList = [
     {
@@ -23,7 +21,6 @@ const SlideList = [
 const App = () => {
     let title = 'Sobre Mí',
         description = 'Soy un desarrollador web apasionado por la tecnología, me encanta entregar los trabajos a tiempo y procuro hacer realiad tus sueños.';
-    const PostList = BlogContent.slice(0 , 3);
     return (
         <div className="active-dark bg_color--9">
 
@@ -146,52 +143,6 @@ const App = () => {
             </div>
             {/* End Portfolio Area */}
 
-            {/* Start Blog Area */}
-            {/* <div id="blog" className="fix">
-                <div className="rn-blog-area pb--120 bg_color--8 mb-dec--30">
-                    <div className="container">
-                        <div className="row align-items-end">
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div className="section-title text-center">
-                                    <span className="subtitle">Desde el Blog</span>
-                                    <h2 className="title">Últimas entradas</h2>
-                                    <p className="description">Espera muy pronto contenido relacionado con tecnología, <br />te va a encantar.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row mt--30 mt_sm--40">
-                            {PostList.map((value , i ) => (
-                                <div className="col-lg-4 col-md-6 col-12 mt--30" key={i}>
-                                    <div className="im_box">
-                                        <div className="thumbnail">
-                                            <Link to="/">
-                                                <img className="w-100" src={`/assets/images/blog/blog-${value.images}.jpg`} alt="Blog Images"/>
-                                            </Link>
-                                        </div>
-                                        <div className="content">
-                                            <div className="inner">
-                                                <div className="content_heading">
-                                                    <div className="category_list">
-                                                        <Link to="/">{value.category}</Link>
-                                                    </div>
-                                                    <h4 className="title">
-                                                        <Link to="/">{value.title}</Link>
-                                                    </h4>
-                                                </div>
-                                                <div className="content_footer">
-                                                    <Link to="/" className="rn-btn btn-opacity">Read More</Link>
-                                                </div>
-                                            </div>
-                                            <Link className="transparent_link" to="/"></Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>    
-                    </div>    
-                </div>
-            </div> */}
-            {/* End Blog Area */}
 
             {/* Start COntact Area */}
             <div id="contact" className="fix">
