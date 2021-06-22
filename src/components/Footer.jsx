@@ -3,7 +3,7 @@ import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn} from "react-icons/fa
 
 const SocialShare = [
     {Social: <FaFacebookF /> , link: 'https://www.facebook.com/martinezballesta'},
-    {Social: <FaLinkedinIn /> , link: 'www.linkedin.com/in/mailer-martinez'},
+    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/in/mailer-martinez'},
     {Social: <FaInstagram /> , link: 'https://www.instagram.com/mailermartinez/'},
     {Social: <FaTwitter /> , link: 'https://twitter.com/mailermartinez'},
 ]
