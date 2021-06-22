@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { ProgressBar } from 'react-bootstrap';
+import { FaJs, FaReact, FaPhp, FaLaravel, FaNodeJs, FaVuejs } from "react-icons/fa";
+
 
 class TabsElement extends Component{
     render(){
         let 
         tab1 = "Habilidades",
-        tab2 = "Reconocimientos",
+        tab2 = "Tecnologías",
         tab3 = "Experiencia",
         tab4 = "Educación";
         const { tabStyle } = this.props
@@ -47,6 +49,16 @@ class TabsElement extends Component{
                                                     <h6 className="title">Marketing y Publicidad</h6>
                                                     <ProgressBar now={100} />
                                                 </div>
+
+                                                <div className="single-progress">
+                                                    <h6 className="title">Google Cloud</h6>
+                                                    <ProgressBar now={100} />
+                                                </div>
+
+                                                <div className="single-progress">
+                                                    <h6 className="title">Despliegue de Servidores</h6>
+                                                    <ProgressBar now={100} />
+                                                </div>
                                             </div>
                                         </div>
                                     </TabPanel>
@@ -56,10 +68,27 @@ class TabsElement extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/">Olimpiadas del Conocimiento <span>- 2 Puesto</span></a> 2011
+                                                   <a href="/"> Javascript <span>- +6 años</span></a> <FaJs />
                                                </li>
                                                <li>
-                                                   <a href="/">Mejor ICFES municipal <span>- 1 Puesto</span></a> 2012
+                                                   <a href="/">React Js <span>- +1 año</span></a>
+                                                   <FaReact />
+                                               </li>
+                                               <li>
+                                                   <a href="/">Php <span>- +6 años</span></a>
+                                                   <FaPhp />
+                                               </li>
+                                               <li>
+                                                   <a href="/">Codeigniter - Laravel <span>- +6 años</span></a>
+                                                   <FaLaravel />
+                                               </li>
+                                               <li>
+                                                   <a href="/">Node Js <span>- +1 año</span></a>
+                                                   <FaNodeJs />
+                                               </li>
+                                               <li>
+                                                   <a href="/"><FaVuejs /> Vue Js <span>- +1 año</span></a>
+                                                   
                                                </li>
                                            </ul>
                                        </div>
@@ -97,6 +126,9 @@ class TabsElement extends Component{
                                                </li>
                                                <li>
                                                    <a href="/">Servicio al Cliente<span> - SENA</span></a> 2014
+                                               </li>
+                                               <li>
+                                                   <a href="/">REACT de cero a experto<span> - Udemy</span></a> 2014
                                                </li>
                                            </ul>
                                        </div>

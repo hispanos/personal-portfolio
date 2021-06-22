@@ -1,6 +1,6 @@
 import React ,{ Component }from "react";
 import { FiLayers } from "react-icons/fi";
-import { FaMobileAlt, FaChartBar, FaBookReader, FaChalkboardTeacher, FaFileAlt } from "react-icons/fa";
+import { FaMobileAlt, FaChartBar, FaBookReader, FaChalkboardTeacher, FaCloud } from "react-icons/fa";
 
 const ServiceList = [
     {
@@ -29,9 +29,9 @@ const ServiceList = [
         description: 'Eres estudiante o programador y necesitas una mano con tus proyectos? Puedo ser la mano extra que necesitas.'
     },
     { 
-        icon: <FaFileAlt />,
-        title: 'Creación de Contenido',
-        description: 'Atascado porque no sabes qué poner en tu sitio web? Puedo redactar el contenido que necesitas.'
+        icon: <FaCloud />,
+        title: 'Migración a la Nube',
+        description: 'Necesitas configurar servidores, dominios, zonas DNS, o espacios en Google Cloud o AWS? Esto es para ti.'
     }
 ]
 
