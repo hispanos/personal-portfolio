@@ -2,12 +2,12 @@ import React from 'react';
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import TextLoop from "react-text-loop";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Tab from "./elements/TabsElement";
-import Contact from "./elements/Contact";
-import PortfolioList from "./elements/PortfolioList";
-import ServiceList from "./elements/ServiceList";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Tab from "../elements/TabsElement";
+import Contact from "../elements/Contact";
+import PortfolioList from "../elements/PortfolioList";
+import ServiceList from "../elements/ServiceList";
 
 const SlideList = [
     {

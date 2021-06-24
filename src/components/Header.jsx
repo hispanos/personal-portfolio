@@ -63,12 +63,13 @@ class Header extends Component{
                             </a>
                         </div>
                         <nav className="mainmenunav d-lg-block ml--50">
-                            <Scrollspy className="mainmenu" items={['home','about','service','portfolio','blog','contact']} currentClassName="is-current" offset={-200}>
-                                <li><a href="#home">Inicio</a></li>
-                                <li><a href="#about">Sobre Mí</a></li>
-                                <li><a href="#service">Servicios</a></li>
-                                <li><a href="#portfolio">Portafolio</a></li>
-                                <li><a href="#contact">Contáctame</a></li>
+                            <Scrollspy className="mainmenu" items={['home','about','service','portfolio','contact','blog']} currentClassName="is-current" offset={-200}>
+                                <li><a href="/#home">Inicio</a></li>
+                                <li><a href="/#about">Sobre Mí</a></li>
+                                <li><a href="/#service">Servicios</a></li>
+                                <li><a href="/#portfolio">Portafolio</a></li>
+                                <li><a href="/#contact">Contáctame</a></li>
+                                <li><a href="/blog">Blog</a></li>
                             </Scrollspy>
                         </nav>
                     </div>

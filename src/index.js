@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './containers/App';
+import Blog from './containers/Blog';
 
 import './index.scss';
 
@@ -12,6 +13,7 @@ class Root extends Component{
           <BrowserRouter basename={'/'}>
               <Switch>
                   <Route exact path={`/`} component={App}/>
+                  <Route exact path={`/blog`} component={Blog}/>
               </Switch>
           </BrowserRouter>
       )
