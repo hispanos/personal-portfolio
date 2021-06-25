@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-class Breadcrumb extends Component{
+class Banner extends Component{
     render(){
         const { title , parent} = this.props;
         return(
@@ -27,5 +27,5 @@ class Breadcrumb extends Component{
     }
 }
 
-export default Breadcrumb;
+export default Banner;
 

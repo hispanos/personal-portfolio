@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import App from './containers/App';
 import Blog from './containers/Blog';
+import BlogDetails from './containers/BlogDetails'
 
 import './index.scss';
 
@@ -14,6 +15,8 @@ class Root extends Component{
               <Switch>
                   <Route exact path={`/`} component={App}/>
                   <Route exact path={`/blog`} component={Blog}/>
+                  <Route exact path={`/categories/:category`} component={Blog}/>
+                  <Route exact path={`/blog/:article`} component={BlogDetails}/>
               </Switch>
           </BrowserRouter>
       )

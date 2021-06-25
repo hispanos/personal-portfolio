@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import Data from "../../db/Data";
 
 const data = new Data();
-const url = data.URI;
-
 
 class BLogList extends Component{
 
@@ -19,8 +17,15 @@ class BLogList extends Component{
         this.getData();
     }
 
+    componentWillReceiveProps(nextProps) {
+        this.getData()
+    }
+
     async getData() {
-        const articles = await data.getArticles();
+        let articles = await data.getArticles();
+        if (this.props.category) {
+            articles = await data.getArticlesByCategory(this.props.category);
+        }
         this.setState({articles})
     }
 
@@ -34,7 +39,7 @@ class BLogList extends Component{
                             <div className="im_box">
                                 <div className="thumbnail">
                                     <Link to={`/blog/${value.title}`}>
-                                        <img className="w-100" src={`${url}${value.image.formats.thumbnail.url}`} alt="Blog Images"/>
+                                        <img className="w-100" src={`${value.image.formats.thumbnail.url}`} alt="Blog Images"/>
                                     </Link>
                                 </div>
                                 <div className="content">
