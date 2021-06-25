@@ -1,12 +1,7 @@
 export default class Data {
 
     constructor() {
-        if(process.env.API_URL) {
-            this.URI = process.env.API_URL;
-        }else {
-            this.URI = `http://localhost:1337`;
-        }
-        
+        this.URI = "https://mailer-martinez.herokuapp.com"
     }
 
     async getArticles() {
