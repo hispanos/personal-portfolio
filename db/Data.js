@@ -1,7 +1,12 @@
 export default class Data {
 
     constructor() {
-        this.URI = `http://localhost:1337`;
+        if(process.env.API_URL) {
+            this.URI = process.env.API_URL;
+        }else {
+            this.URI = `http://localhost:1337`;
+        }
+        
     }
 
     async getArticles() {
