@@ -30,17 +30,18 @@ class BLogList extends Component{
     }
 
     render() {
-        const PostList = this.state.articles
+        const PostList = this.state.articles;
+        let titleLink = "";
         return (
              <Fragment>
                  <div className="row mt_dec--30">
                     {PostList.map((value , i ) => {
-                        value.title = value.title.replaceAll(" ", "-")
+                        titleLink = value.title.replaceAll(" ", "-")
                         return(
                         <div className="col-lg-4 col-md-6 col-sm-6 col-12 mt--30" key={i}>
                             <div className="im_box">
                                 <div className="thumbnail">
-                                    <Link to={`/blog/${value.title}`}>
+                                    <Link to={`/blog/${titleLink}`}>
                                         <img className="w-100" src={`${value.image.formats.thumbnail.url}`} alt="Blog Images"/>
                                     </Link>
                                 </div>
@@ -57,14 +58,14 @@ class BLogList extends Component{
                                                 }
                                             </div>
                                             <h4 className="title">
-                                                <Link to={`/blog/${value.title}`}>{value.title}</Link>
+                                                <Link to={`/blog/${titleLink}`}>{value.title}</Link>
                                             </h4>
                                         </div>
                                         <div className="content_footer">
-                                            <Link to={`/blog/${value.title}`} className="rn-btn btn-opacity">Leer Más</Link>
+                                            <Link to={`/blog/${vtitleLink}`} className="rn-btn btn-opacity">Leer Más</Link>
                                         </div>
                                     </div>
-                                    <Link className="transparent_link" to={`/blog/${value.title}`}></Link>
+                                    <Link className="transparent_link" to={`/blog/${titleLink}`}></Link>
                                 </div>
                             </div>
                         </div>
