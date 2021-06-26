@@ -62,7 +62,7 @@ class BLogList extends Component{
                                             </h4>
                                         </div>
                                         <div className="content_footer">
-                                            <Link to={`/blog/${vtitleLink}`} className="rn-btn btn-opacity">Leer Más</Link>
+                                            <Link to={`/blog/${titleLink}`} className="rn-btn btn-opacity">Leer Más</Link>
                                         </div>
                                     </div>
                                     <Link className="transparent_link" to={`/blog/${titleLink}`}></Link>
