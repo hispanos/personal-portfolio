@@ -34,7 +34,9 @@ class BLogList extends Component{
         return (
              <Fragment>
                  <div className="row mt_dec--30">
-                    {PostList.map((value , i ) => (
+                    {PostList.map((value , i ) => {
+                        value.title = value.title.replaceAll(" ", "-")
+                        return(
                         <div className="col-lg-4 col-md-6 col-sm-6 col-12 mt--30" key={i}>
                             <div className="im_box">
                                 <div className="thumbnail">
@@ -66,7 +68,8 @@ class BLogList extends Component{
                                 </div>
                             </div>
                         </div>
-                     ))}
+                        )}
+                     )}
                  </div>
              </Fragment>
         );

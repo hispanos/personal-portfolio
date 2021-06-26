@@ -24,7 +24,8 @@ class Blog extends Component {
     }
 
     async getData() {
-        let article = await data.getArticle(this.props.match.params.article);
+        const name = this.props.match.params.article.replaceAll("-", " ")
+        let article = await data.getArticle(name);
         this.setState({article})
         this.setState({commentsQuantity: article.comments.length})
         this.setState({articleContent: article.content})
