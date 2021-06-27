@@ -36,12 +36,13 @@ class BLogList extends Component{
              <Fragment>
                  <div className="row mt_dec--30">
                     {PostList.map((value , i ) => {
-                        titleLink = value.title.replaceAll(" ", "-")
+                        titleLink = value.title.replaceAll(" ", "-");
+                        let url = {pathname: `/blog/${titleLink}`, post: value}
                         return(
                         <div className="col-lg-4 col-md-6 col-sm-6 col-12 mt--30" key={i}>
                             <div className="im_box">
                                 <div className="thumbnail">
-                                    <Link to={`/blog/${titleLink}`}>
+                                    <Link to={url}>
                                         <img className="w-100" src={`${value.image.formats.thumbnail.url}`} alt="Blog Images"/>
                                     </Link>
                                 </div>
@@ -58,14 +59,14 @@ class BLogList extends Component{
                                                 }
                                             </div>
                                             <h4 className="title">
-                                                <Link to={`/blog/${titleLink}`}>{value.title}</Link>
+                                                <Link to={url}>{value.title}</Link>
                                             </h4>
                                         </div>
                                         <div className="content_footer">
-                                            <Link to={`/blog/${titleLink}`} className="rn-btn btn-opacity">Leer Más</Link>
+                                            <Link to={url} className="rn-btn btn-opacity">Leer Más</Link>
                                         </div>
                                     </div>
-                                    <Link className="transparent_link" to={`/blog/${titleLink}`}></Link>
+                                    <Link className="transparent_link" to={url}></Link>
                                 </div>
                             </div>
                         </div>

@@ -25,11 +25,16 @@ class Blog extends Component {
     }
 
     async getData() {
-        const name = this.props.match.params.article.replaceAll("-", " ")
-        let article = await data.getArticle(name);
-        this.setState({article})
-        this.setState({commentsQuantity: article.comments.length})
-        this.setState({articleContent: article.content})
+        let article = {};
+        if(!this.props.location.post) {
+            const name = this.props.match.params.article.replaceAll("-", " ")
+            article = await data.getArticle(name);
+        }else {
+            article = this.props.location.post
+        }
+        await this.setState({article})
+        await this.setState({commentsQuantity: article.comments.length})
+        await this.setState({articleContent: article.content})
         Prism.highlightAll();
     }
     
