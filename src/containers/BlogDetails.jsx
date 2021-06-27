@@ -32,10 +32,13 @@ class Blog extends Component {
         }else {
             article = this.props.location.post
         }
-        await this.setState({article})
-        await this.setState({commentsQuantity: article.comments.length})
-        await this.setState({articleContent: article.content})
-        Prism.highlightAll();
+        this.setState({
+            article,
+            commentsQuantity: article.comments.length,
+            articleContent: article.content
+        }, () => {
+            Prism.highlightAll();
+        })
     }
     
     render () {
