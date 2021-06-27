@@ -4,6 +4,7 @@ import { FiChevronUp } from "react-icons/fi";
 import Header from "../components/Header";
 import BannerBlog from "../elements/BannerBlog";
 import Footer from "../components/Footer";
+import Prism from "prismjs";
 
 import Data from "../../db/Data";
 const data = new Data();
@@ -29,6 +30,7 @@ class Blog extends Component {
         this.setState({article})
         this.setState({commentsQuantity: article.comments.length})
         this.setState({articleContent: article.content})
+        Prism.highlightAll();
     }
     
     render () {
