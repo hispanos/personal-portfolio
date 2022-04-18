@@ -15,7 +15,7 @@ const SlideList = [
         category: 'Bienvenidos a mi mundo',
         description: '',
         buttonText: 'Descargar CV',
-        buttonLink: '/'
+        buttonLink: 'https://drive.google.com/file/d/13iL_mvETSer1StTFL1jn4s6el97Pd8ze/view?usp=sharing'
     }
 ]
 const App = () => {
@@ -47,7 +47,7 @@ const App = () => {
                                             </h1>
                                             <h2> con amor desde Colombia.</h2>
                                             {value.description ? <p className="description">{value.description}</p> : ''}
-                                            {value.buttonText ? <div className="slide-btn mt--30"><a className="btn-default btn-border btn-opacity" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
+                                            {value.buttonText ? <div className="slide-btn mt--30"><a className="btn-default btn-border btn-opacity" href={`${value.buttonLink}`} target="_blank">{value.buttonText}</a></div> : ''}
                                         </div>
                                     </div>
                                 </div>
